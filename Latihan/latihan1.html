@@ -9,11 +9,11 @@
     <title>Latihan 1 HTML</title>
     <style>
         .container {
-            width: 80%;
+            width: 40%;
             margin: 20px auto;
             padding: 20px;
-            border: 2px solid black; /* Border mengelilingi semua elemen */
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+            align-items: center;
         }
         table {
             border-collapse: collapse;
@@ -21,7 +21,7 @@
         th, td {
             border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
         th {
             background-color: #f2f2f2;
@@ -68,6 +68,20 @@
             </table>
         </section> <br> <hr>
 
+    <form id="kontak">
+        <h2>Hubungi Kami</h2>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Alasan menghubungi kami:</p>
+        <textarea rows="4" cols="50" name="alasan" form="usrform"> Masukan Alasan...</textarea><br><br>
+
+        <input type="button" onclick="alert('Form anda sudah dikirim!')" value="Submit"><br><br><hr>
+    </form>
+
     <form id="form">
         <h2>Form Pendaftaran</h2>
         <label for="nama">Nama:</label><br>
@@ -85,6 +99,7 @@
         <p>Kendaraan yang digunakan:</p>
         <input type="checkbox" id="kendaraan1" name="kendaraan1" value="Bike">
         <label for="kendaraan1">Motor</label><br>
+        
         <input type="checkbox" id="kendaraan2" name="kendaraan2" value="Car">
         <label for="kendaraan2">Mobil</label><br><br>
 
@@ -96,20 +111,7 @@
 
         <input type="button" onclick="alert('Form anda sudah dikirim!')" value="Submit">
     </form><br><hr>
-
-    <form id="kontak">
-        <h2>Hubungi Kami</h2>
-        <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <p>Alasan menghubungi kami:</p>
-        <textarea rows="4" cols="50" name="alasan" form="usrform"> Masukan Alasan...</textarea><br><br>
-
-        <input type="button" onclick="alert('Form anda sudah dikirim!')" value="Submit"><br><br><hr>
-    </form>
+    
       <br>
     <footer>
         <p>&copy; 2025 oleh JonathanBirila</p>
